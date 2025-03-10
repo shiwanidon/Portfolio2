@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Shiwani Nagarkoti</title>
+    <link rel="icon" href="avatar.png" type="image/png">   
+
+    
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="bi bi-menu-button-fill"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <button class="c-btn ms-lg-4 py-2 px-3 px-md-4 rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#contactModal">
+                Contact
+            </button>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="c-btn h-btn mt-3 py-2 px-4 rounded-pill w-100">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="home pt-5 pb-5" id="home">
+        <div class="row justify-content-evenly align-middle">
+            <div class="col-12 col-md-6 text-center text-md-start" data-aos="slide-right">
+                <h2 style="color:white">
+                    Hello! I Am <br><span class="c-orange">Shiwani Nagarkoti</span>
+                </h2>
+                <p class="text" style="color: rgb(225, 204, 204);">
+                    I'm a Fashion Model and Content Creator with 2 years of experience in creating engaging content and stunning fashion visuals.
+                </p>
+                <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" data-bs-toggle="modal"
+                    data-bs-target="#contactModal">
+                    Hire Me
+                </button>
+                <a href="" class="link ms-4 d-none">See My Work</a>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <img src="avatar.png" class="img-fluid banner-image mx-auto" alt="Banner Image"
+                    style="border-radius: 50%">
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise mt-5" id="service">
+        <div class="heading text-center">
+            <small style="color:  #3f396d;">My Expertise</small>
+            <h3>
+                Provide Wide Range of <br />
+                Digital Services
+            </h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card" style="background-color: rgb(133, 184, 183);">
+                    <div class="img">
+                        <img src="image.png" class="w-25 img-fluid img" alt="Web Design Icon" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Fashion Modeling</h4>
+                        <p class="text" style="color: white;text-align: justify;">
+                            I specialize in creating stunning fashion visuals, from runway shows to photoshoots. With a keen eye for detail and a passion for style, I bring fashion concepts to life.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="service2.png" class="w-25 img-fluid img" alt="Web Development Icon" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Content Creation</h4>
+                        <p class="text" style="color: white;text-align: justify;">
+                            As a content creator, I focus on creating engaging and visually appealing content for social media platforms. From Instagram reels to YouTube videos, I bring ideas to life.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card" style="background-color: rgb(174, 91, 138);">
+                    <div class="img">
+                        <img src="service3.png" class="w-25 img-fluid img" alt="Debugging Icon" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Brand Collaboration</h4>
+                        <p class="text" style="color: white; text-align: justify;">
+                            I collaborate with brands to create impactful campaigns that resonate with their audience. From fashion brands to lifestyle products, I help brands connect with their target market.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill mt-5 py-5" id="about">
+        <div class="row justify-content-evenly">
+            <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+                <div class="row justify-content-evenly">
+                    <div class="col-10 col-md-6">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress html-css">
+                                <span class="progress-value html-progress">100%</span>
+                            </div>
+                            <br />
+                            <span class="text">Fashion Modeling</span>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 mt-4 mt-md-0">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress javascript">
+                                <span class="progress-value javascript-progress">90%</span>
+                            </div>
+                            <br />
+                            <span class="text" style="margin-left: 24px;">Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly mt-4">
+                    <div class="col-10 col-md-6">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress php">
+                                <span class="progress-value php-progress">90%</span>
+                            </div>
+                            <br />
+                            <span class="text" style="margin-left: 35px;">Brand Collaboration</span>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 mt-4 mt-md-0">
+                        <div class="progress-card ms-3  ms-md-0">
+                            <div class="circular-progress reactjs">
+                                <span class="progress-value reactjs-progress">90%</span>
+                            </div>
+                            <br>
+                            <span class="text" style="margin-left: 40px;">Social Media Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+                <div class="heading mt-5 mt-md-3">
+                    <small>My Skills</small>
+                    <h3>
+                        Digital Expertise
+                    </h3>
+                    <p class="text" style="color: white ;text-align: justify;">
+                        My fascination with fashion and content creation turned into a passion for creating engaging visuals and impactful campaigns. Starting with fashion modeling, I quickly expanded my expertise to content creation and brand collaborations. Every project I undertake strengthens my creativity and drives my passion for fashion and digital media. This portfolio represents my dedication and continuous growth. Let’s create something amazing together.
+                    </p>
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                        <a href="Siresume.pdf" download="SampleCV"
+                            style="text-decoration: none;color: #fff;">Download CV</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery mt-5 py-5" id="portfolio">
+        <div class="heading text-center">
+            <small>My Work</small>
+            <h3>Portfolio Gallery</h3>
+        
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+                <div class="portfolio-item">
+                    <video width="320" height="240" controls>
+                        <source src="assets\movie.1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>  
+            </div>
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+                <div class="portfolio-item">
+                    <video width="320" height="240" controls>
+                        <source src="assets\movie.2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div> 
+                </div>
+            </div>
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+                <div class="portfolio-item">
+                    <video width="320" height="240" controls>
+                        <source src="assets\movie.3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial mt-5 pt-5" id="testimonial" style="background-color: rgb(244, 187, 225);">
+        <div class="row justify-content-evenly">
+            <div class="col-md-4 col-10" data-aos="slide-right">
+                <img src="testimonials.png" class="img-fluid" alt="Testimonials Image" />
+            </div>
+            <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+                <div class="heading">
+                    <small>Testimonials</small>
+                    <h3>Happy Clients Feedback</h3>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            Shiwani is a talented fashion model and content creator. Her ability to bring ideas to life is unmatched. She has a keen eye for detail and a passion for fashion that shines through in her work. Highly recommended!
+                                        </p>
+                                        <h4>Sabrina</h4>
+                                        <small class="fs-6 text-muted">CEO of Darknet</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            “Shiwani’s content creation skills are top-notch. She has a unique ability to create engaging and visually appealing content that resonates with the audience. It’s always a pleasure working with her.”
+                                        </p>
+                                        <h4>Taylor Swift</h4>
+                                        <small class="fs-6 text-muted">Manager</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-evenly">
+                                    <div class="col-2 text-center">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="text-muted">
+                                            “Shiwani’s brand collaborations are always impactful. She has a deep understanding of how to connect with the target audience and create campaigns that drive results. A true professional!”
+                                        </p>
+                                        <h4>Nirjala </h4>
+                                        <small class="fs-6 text-muted">General Manager of Lukakinda</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nextprev-btn rounded-pill prev-btn" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-circle-fill prev"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="nextprev-btn rounded-pill next-btn" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-circle-fill next"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog mt-5 pb-5" id="blog">
+        <div class="heading text-center pt-5">
+            <small>Latest News</small>
+            <h3>Blog & Articles</h3>
+        </div>
+        <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+            <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+                <div class="card">
+                    <img src="bg.png" class="card-img-top rounded-4" alt="Blog Post 1" />
+                    <div class="card-body px-4" style="background-color: #ccbec4e7;">
+                        <small>By Shiwani Nagarkoti</small><span class="ms-3">Mar 8,2022</span>
+                        <h4 class="card-title">
+                            <p>My Journey as a Fashion Model</p>
+                        </h4>
+                        <p class="text-muted">
+                            Fashion has always inspired me, turning curiosity into passion. I started with runway shows, gradually expanding my expertise to photoshoots and brand collaborations. Each project fuels my love for style and creativity. This portfolio showcases my work and dedication. Let’s collaborate!
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+                <div class="card">
+                    <img src="currency-converter .png" class="card-img-top rounded-4" alt="Blog Post 2" />
+                    <div class="card-body px-4" style="background-color: #ccbec4e7;">
+                        <small>By Shiwani Nagarkoti</small><span class="ms-3">Mar 8,2022</span>
+                        <h4 class="card-title">
+                            <p>Overcoming Challenges in Content Creation</p>
+                        </h4>
+                        <p class="text-muted">
+                            Every content creator faces challenges, from creating engaging content to staying consistent. The key to success is persistence and continuous learning. I embrace each challenge as an opportunity to grow, refine my skills, and create better content. Through creativity and innovation, I strive to deliver impactful results.
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+                <div class="card">
+                    <img src="g.png" class="card-img-top rounded-4" alt="Blog Post 3" />
+                    <div class="card-body px-4" style="background-color: #ccbec4e7;">
+                        <small>By Shiwani Nagarkoti</small><span class="ms-3">Mar 8,2022</span>
+                        <h4 class="card-title">
+                            <p>Why Fashion Models Need a Portfolio</p>
+                        </h4>
+                        <p class="text-muted">
+                            A personal portfolio is a must-have for fashion models. It serves as an interactive resume, showcasing skills and projects. A strong portfolio boosts visibility, connects with potential clients, and highlights versatility. Start yours today and stand out in the fashion world!
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5" id="contact">
+        <div class="heading text-center">
+            <small>Get in Touch</small>
+            <h3>Any Questions? Feel Free to Contact</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p><strong>Name:</strong> Shiwani Nagarkoti</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p><strong>Phone:</strong> +977 9742973182</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p><strong>Email:</strong> shiwaninagarkoti@gmail.com</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p><strong>Address:</strong> 07, Sworgadwari Tole, Basundhara, Kathmandu, Nepal</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <div class="col-11">
+                        <p><strong>Website:</strong> shiwaninagarkoti.com.np</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-10 mt-5 mt-md-0" data-aos="slide-left">
+                <div class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <footer class="text-center text-muted py-4">
+        <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+        <div class="link-group mt-5" data-aos="fade-up">
+            <a href="#home">Home</a>
+            <div class="vr"></div>
+            <a href="#about">About</a>
+            <div class="vr"></div>
+            <a href="#service">Service</a>
+            <div class="vr"></div>
+            <a href="#portfolio">Portfolio</a>
+            <div class="vr"></div>
+            <a href="#blog">Blog</a>
+            <div class="vr"></div>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links mt-5" data-aos="fade-up">
+            <button href="" class="rounded-pill dribble">
+                <i class="bi bi-dribbble"></i>
+            </button>
+            <button href="https://www.whatsapp.com/" class="rounded-pill whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </button>
+            <button href="" class="rounded-pill behance">
+                <i class="bi bi-behance"></i>
+            </button>
+        </div>
+        <hr class="text-muted my-4" />
+
+        <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+```

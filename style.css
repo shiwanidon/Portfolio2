@@ -1,0 +1,407 @@
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffe4e1; /* Very Light Pink */
+    color: #e91e63; /* Pink */
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 182, 193, 0.95); /* Lighter Pink */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(255, 64, 129, 0.1); /* Pink Shadow */
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: #f50057 !important; /* Vibrant Pink */
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.nav-link {
+    color: #e91e63 !important; /* Pink */
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover {
+    color: #f50057 !important; /* Vibrant Pink */
+    transform: translateY(-2px);
+}
+
+.c-btn {
+    background: #f50057; /* Vibrant Pink */
+    color: white !important;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.c-btn:hover {
+    background: #e91e63; /* Darker Pink */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, #ff69b4 0%, #d81b60 100%); /* More Vibrant Pinks */
+    color: white;
+    padding: 8rem 0;
+}
+
+.home h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.1); /* Pink Shadow */
+}
+
+.c-orange {
+    color: #ffb6c1; /* Light Pink */
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Expertise Section */
+.expertise {
+    padding: 6rem 0;
+    background: #ffb6c1; /* Solid Light Pink */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading small {
+    color: #f50057; /* Vibrant Pink */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.heading h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    color: #e91e63; /* Pink */
+}
+
+.service-card {
+    background: #ffe6ee; /* Light Pink */
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f50057; /* Vibrant Pink Border */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 64, 129, 0.08);
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #e91e63; /* Pink */
+}
+
+.service-card p {
+    color: #f50057; /* Vibrant Pink */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.link {
+    color: #f50057; /* Vibrant Pink */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: #e91e63; /* Darker Pink */
+    text-decoration: underline;
+}
+
+/* Skill Section */
+.skill {
+    background: linear-gradient(45deg, #e91e63, #ff69b4); /* Pink to Vibrant Pink */
+    color: white;
+    padding: 6rem 0;
+}
+
+.circular-progress {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(#ff69b4 var(--progress), #ffe4e1 0%); /* More Pink Gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: progress 1.5s ease-out forwards;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #e91e63; /* Pink */
+    border-radius: 50%;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffb6c1; /* Light Pink */
+}
+
+@keyframes progress {
+    to {
+        background: conic-gradient(#ff69b4 var(--progress), #ffe4e1 0%);
+    }
+}
+
+/* Portfolio Gallery Section */
+.portfolio-gallery {
+    padding: 6rem 0;
+    background: #ffe4e1; /* Very Light Pink */
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid #f50057; /* Vibrant Pink Border */
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 64, 129, 0.8); /* Bright Pink with opacity */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-card .overlay h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-card .overlay p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background: #fce4ec; /* Lighter Pink */
+    padding: 6rem 0;
+}
+
+.carousel-item {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #f50057; /* Vibrant Pink Border */
+}
+
+.carousel-item p {
+    font-size: 1.1rem;
+    color: #f50057; /* Vibrant Pink */
+    line-height: 1.8;
+}
+
+.carousel-item h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #e91e63; /* Pink */
+}
+
+.carousel-item small {
+    font-size: 1rem;
+    color: #f50057; /* Vibrant Pink */
+}
+
+/* Blog Section */
+.blog {
+    padding: 6rem 0;
+    background: #ffe6ee; /* Light Pink */
+}
+
+.blogpost .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.05); /* Subtle Pink Shadow */
+}
+
+.blogpost .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 64, 129, 0.1); /* Pink Shadow */
+}
+
+.blogpost .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogpost .card-body {
+    padding: 1.5rem;
+}
+
+.blogpost .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #e91e63; /* Pink */
+}
+
+.blogpost .card-text {
+    color: #f50057; /* Vibrant Pink */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    background: #ffe6ee; /* Light Pink */
+    padding: 6rem 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 2px solid #f50057; /* Vibrant Pink Border */
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f50057; /* Vibrant Pink */
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #e91e63; /* Pink */
+    color: white;
+    padding: 4rem 0;
+}
+
+footer h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffb6c1; /* Light Pink */
+}
+
+.social-links button {
+    background: #f50057; /* Vibrant Pink */
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.social-links button:hover {
+    background: #e91e63; /* Darker Pink */
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.home img {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h2 {
+        font-size: 2.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .heading h3 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        margin-bottom: 2rem;
+    }
+}
